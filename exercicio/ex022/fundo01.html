@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg); /*tamanho do arquivo*/
+        }
+        .quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightpink;
+            width: 300px;
+            height: 300px;
+        }
+        #q1 {
+            background-color: yellowgreen;
+
+        }
+        #q2{
+            background-image: linear-gradient(to bottom, yellowgreen, yellow);
+
+        }
+        #q3{
+            background-image: url(imagens/pattern001.png); /*imagem que esta sendo exibida é sem sentido semântico, ela tem um sentido visual, de design*/ 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    
+</body>
+</html>
