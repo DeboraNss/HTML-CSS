@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cordel_enc01';
+    src: url('../fontes/cordel_encarnado01.otf') format('opentype');
+    font-weight: normal;
+    font-style:  normal;
+}
+
+@font-face {
+    font-family: 'cordelrustika';
+    src: url('../fontes/cordelrustika.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'cordelina';
+    src: url('../fontes/cordelina.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --fonte01: 'cordel_enc01', Arial, Helvetica, sans-serif;
+    --fonte02: 'cordelrustika', Arial, Helvetica, sans-serif;
+    --fonte03: 'cordelina', Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-height: 100vh;
+   background-color: darkgray; 
+
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;/*todas maiusculas, mas a primeira letra é um pouco maior*/
+    /*todas as letras maiusculas-> text-transform:uppercase*/
+    font-family: var(--fonte01);
+    font-size: 10vw;
+}
+header > p {
+    padding-bottom: 50px;
+
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hove, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.5vw; /*viewport width*/
+}
+.normal {
+    background-color: white;
+    color: black;
+    
+
+}
+.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+
+}
+.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
