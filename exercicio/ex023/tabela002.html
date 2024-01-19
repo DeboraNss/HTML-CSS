@@ -11,6 +11,7 @@
     table {
       width: 500px;
       border-collapse: collapse;
+      position: relative;
     }
     thead {
       background-color: #00637A;
@@ -34,9 +35,23 @@
       color: white;
 
     }
+    thead > tr > th {
+      position: sticky; /*colado*/
+      top: -1px;
+      background-color: #00203A;
+    }
+    tbody > tr:nth-child(odd) { /*odd-ímpares ou 2n-1*/
+      background-color: #85D6DC;
+    }
+    tbody > tr:nth-child(even) { /* even par-2n */
+      background-color: #53ACB7;
+    }
     tfoot {
       background-color: #00637A;
       color: white;
+    }
+    p {
+      text-align: justify;
     }
   </style>
 </head>
@@ -229,12 +244,25 @@
     </tbody>
     <tfoot>
       <tr>
-        <td></td> <!--scope="row" titulo da linha (semântica)-->
-        <th scope="row">Total de Habitantes</th>
-        <td class="num"><strong>203 062 512</strong></td>
-        <td></td>
+        <!--scope="row" titulo da linha (semântica)-->
+        <th colspan="2" scope="row">Total de Habitantes</th>
+        <td colspan="2" class="num"><strong>203 062 512</strong></td>
+        
     </tfoot>
   </table>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusamus, obcaecati aliquid suscipit maxime natus quo nemo aliquam vel dolores quas soluta sequi distinctio delectus quibusdam fugiat temporibus amet. Voluptas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iusto modi inventore vel labore saepe magni? Culpa hic incidunt quasi, quaerat, praesentium commodi eligendi placeat esse cumque a perspiciatis eum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eius, amet ratione nihil, animi vitae modi repudiandae ad quos laboriosam quaerat, architecto dicta ipsum nesciunt repellat exercitationem magnam numquam voluptate?</p>
+
   
 </body>
 </html>
