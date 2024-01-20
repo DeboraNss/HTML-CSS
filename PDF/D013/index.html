@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D0013</title>
+  <style>
+    body {
+      text-align: center;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #tab01 {
+      width: 400px;
+      margin: auto;
+      border-collapse: collapse;
+    }
+    #tab02 {
+      width: 600px;
+      margin: auto;
+      border-collapse: collapse;
+    }
+    tr, td {
+      text-align: center;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    caption {
+      color: white;
+      font-size: 1.2em;
+      background-color: #788585;
+      padding: 10px;
+      margin-top: 50px;
+    }
+    thead > tr:nth-child(odd){
+      background-color: #9CAEA9; 
+    }
+    thead > tr:nth-child(even){
+      background-color: #CCDAD1;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <h1>Tabelas</h1>
+  <table id="tab01">
+    <caption>TABELA 01</caption>
+    <thead>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td rowspan="2">3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td colspan="3">8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td rowspan="2">10</td>
+        <td colspan="2">11</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+      </tr>
+    </thead>
+  </table>
+  <table id="tab02">
+    <caption>TABELA 02</caption>
+    <thead>
+      <tr>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
+      </tr>
+      <tr>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>J</td>
+        <td>K</td>
+        <td>l</td>
+      </tr>
+      <tr>
+        <td colspan="4">M</td>
+      </tr>
+    </thead>
+  </table>
+</body>
+</html>
