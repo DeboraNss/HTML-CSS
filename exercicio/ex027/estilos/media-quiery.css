@@ -5,8 +5,13 @@
   body {
     background-image: linear-gradient( to top, #C0D7BB, #85BDA6);
   }
+  #formulario > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   #login {
     width: 90vw;
+    height: 310px;
   }
   #login > div#imagem {
     float: left;
@@ -22,10 +27,15 @@
 
 @media screen and (min-width: 992px) {
   body {
-    background-image: linear-gradient( to top, #C0D7BB, #85BDA6, #3E885B);
+    background-image: linear-gradient( to top, #C0D7BB, #85BDA6, #54916c);
+  }
+  #formulario > h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   #login {
     width: 950px;
+    height: 400px;
   }
   #login > div#imagem {
     float: right;
